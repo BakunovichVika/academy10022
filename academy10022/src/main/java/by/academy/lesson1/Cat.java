@@ -48,4 +48,12 @@ public class Cat {
 	public void setNickname(String nickname) {
 		this.nickname = nickname;
 	}
+	
+	public void test () {
+	}
+	
+	public void walk () {
+		System.out.println("Кот гуляет");
+		
+	}
 }
