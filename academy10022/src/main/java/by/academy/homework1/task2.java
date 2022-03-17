@@ -23,7 +23,7 @@ public class task2 {
                 System.out.println("Квадрат числа: " + (perem*perem));
                 break;
             case "char":
-                System.out.println("Код символа: " + type.charAt(0));
+                System.out.println("Код символа: " + (int)type.charAt(0));
                 break;
             case "String", "string":
                 System.out.println("Hello " + perem);
