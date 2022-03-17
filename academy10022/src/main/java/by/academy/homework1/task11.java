@@ -36,6 +36,9 @@ public class task11 {
 
         konez = price - (price*discount);
         System.out.println("Сумма вашей покупки: " + price + "\nФинальная сумма: " + konez);
+
+        sc.close();
+        sca.close();
     }
 
 }

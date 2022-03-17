@@ -17,6 +17,7 @@ public class task3 {
         else {
             System.out.println("Число не входит в диапазон!");
         }
+        sc.close();
     }
 }
 

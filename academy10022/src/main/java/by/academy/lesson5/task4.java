@@ -20,10 +20,9 @@ public class task4 {
             System.out.println("Введеные числа = " + array[a]);
         }
         for (a = 0; a <= n; a++) {
-            if (array[a] < 0) negativ++;
-            {
+            if (a < 0) {
+                negativ++;
                 System.out.println("Количество отрицальных чисел = " + negativ);
-
             }
 
         }

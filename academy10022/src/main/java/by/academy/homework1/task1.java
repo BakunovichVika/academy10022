@@ -33,6 +33,7 @@ public class task1 {
         else if (price >= 400) {
             System.out.println("Ваша скидка 20%, финальная цена = " + (price - (price*0.20)));
         }
-
+        sc.close();
+        sca.close();
     }
 }

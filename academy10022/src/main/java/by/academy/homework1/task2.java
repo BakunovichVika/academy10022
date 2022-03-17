@@ -32,6 +32,7 @@ public class task2 {
                 System.out.println("Unsupported type");
 
         }
-
+        sc.close();
+        sca.close();
     }
 }

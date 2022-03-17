@@ -1,30 +1,19 @@
-package by.academy.lesson5;
-
-import java.util.Random;
-
-public class lesson1 {
-         public static void main(String... args) {
-            int[] array = new int[10];
-            Random rand = new Random();
-
-            for (int i = 0; i < array.length; i++) {
-                array[i] = rand.nextInt(10);
-            }
-
-            System.out.println("initial array:");
-            for (int i = 0; i < array.length; i++) {
-                System.out.print(array[i] + "   ");
-            }
-
-            System.out.println();
-            for (int i = 0; i < array.length; i++) {
-                array[i] += 10;
-            }
-            System.out.println("new array:");
-            for (int i = 0; i < array.length; i++) {
-                System.out.print(array[i] + "   ");
-            }
-
-        }
-    }
-
+//package by.academy.lesson5;
+//
+//import java.util.Random;
+//
+//public class lesson1 {
+//    public static void main(String[] args) {
+////        int a, b = 0;
+////        int i;
+////        for (int i = 2; i<=20; i++);
+//        if (i%2==0) a++;
+//        int [] arr = new int[a];
+//        for (int i = 2; i<= arr.length; i++);
+//        if (i%2==0) {
+//            arr [b]=i;
+//            System.out.print(arr[b]+ " ");
+//            b++;
+//        }
+//    }
+//}
