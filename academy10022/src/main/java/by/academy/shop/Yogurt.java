@@ -1,30 +1,32 @@
 package by.academy.shop;
 
 public class Yogurt extends Product {
-    protected double date;
+    protected String flavor;
 
-    protected Yogurt (double price, int quantity, String name, double date) {
-        super(price,quantity,name,"молочные продукты");
-        this.date = date;
+    public Yogurt(double price, int quantity, String name, String type, String flavor) {
+        super(price, quantity, name, type);
+        this.flavor = flavor;
     }
+
     @Override
     protected double getDiscount() {
-        if (date > 10) {
+        if (price > 10) {
             return 0.8;
         }
         return 1;
     }
 
-
-    protected void dating () {
-        System.out.println("Срок годности йогурта: " + date);
+    protected void flavour() {
+        System.out.println("Вкус йогурта: " + flavor);
     }
 
-    public double getDate() {
-        return date;
+    public String getFlavor() {
+        return flavor;
     }
 
-    public void setDate(double date) {
-        this.date = date;
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
     }
 }
+
+

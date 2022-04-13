@@ -2,7 +2,7 @@ package by.academy.homework1;
 
 import java.util.Scanner;
 
-public class task11 {
+public class Task11 {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println ("Введите сумму покупки: ");

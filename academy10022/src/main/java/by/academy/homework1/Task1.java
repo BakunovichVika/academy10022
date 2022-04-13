@@ -3,7 +3,7 @@ package by.academy.homework1;
 
 import java.util.Scanner;
 
-public class task1 {
+public class Task1 {
     public static void main (String[] args) {
 
         Scanner sc = new Scanner(System.in);

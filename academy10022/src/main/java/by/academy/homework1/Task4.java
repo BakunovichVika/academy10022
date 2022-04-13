@@ -1,6 +1,6 @@
 package by.academy.homework1;
 
-public class task4 {
+public class Task4 {
     public static void main (String[] args) {
 
         int i = 2;

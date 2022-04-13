@@ -3,10 +3,12 @@ package by.academy.shop;
 public class Juice extends Product {
     protected String taste;
 
-    protected Juice (double price, int quantity, String name, String taste) {
-        super (price,quantity,name,"сок");
+    public Juice(double price, int quantity, String name, String type, String taste) {
+        super(price, quantity, name, type);
         this.taste = taste;
+
     }
+
     @Override
     protected double getDiscount() {
         if (price > 15) {
@@ -15,8 +17,7 @@ public class Juice extends Product {
         return 1;
     }
 
-    protected void flavor () {
-
+    protected void taste () {
         System.out.println("Вкус сока: " + taste);
     }
 
@@ -27,4 +28,5 @@ public class Juice extends Product {
     public void setTaste(String taste) {
         this.taste = taste;
     }
+
 }

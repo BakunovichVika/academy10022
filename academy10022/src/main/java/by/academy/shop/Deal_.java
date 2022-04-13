@@ -1,5 +1,6 @@
 package by.academy.shop;
 
+import java.time.LocalDate;
 import java.util.Arrays;
 
 public class Deal_ {
@@ -9,6 +10,10 @@ public class Deal_ {
     protected Product[] basket;
     protected int index = 0;
 
+
+    LocalDate today = LocalDate.now();
+    LocalDate deadline = today.plusDays(10);
+
     public Deal_ () {
         super();
     }
@@ -17,6 +22,10 @@ public class Deal_ {
         this.place = place;
         this.buyer = buyer;
         this.seller = seller;
+    }
+
+    public void deadLine () {
+        System.out.println(deadline);
     }
 
     public void addProduct (Product product) {
@@ -71,6 +80,46 @@ public class Deal_ {
         this.buyer = buyer;
     }
 
+    public User getSeller() {
+        return seller;
+    }
+
+    public void setSeller(User seller) {
+        this.seller = seller;
+    }
+
+    public Product[] getBasket() {
+        return basket;
+    }
+
+    public void setBasket(Product[] basket) {
+        this.basket = basket;
+    }
+
+    public int getIndex() {
+        return index;
+    }
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public LocalDate getToday() {
+        return today;
+    }
+
+    public void setToday(LocalDate today) {
+        this.today = today;
+    }
+
+    public LocalDate getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(LocalDate deadline) {
+        this.deadline = deadline;
+    }
+
     @Override
     public String toString() {
         return "Deal_{" +
@@ -78,6 +127,9 @@ public class Deal_ {
                 ", buyer=" + buyer +
                 ", seller=" + seller +
                 ", basket=" + Arrays.toString(basket) +
+                ", index=" + index +
+                ", today=" + today +
+                ", deadline=" + deadline +
                 '}';
     }
 }

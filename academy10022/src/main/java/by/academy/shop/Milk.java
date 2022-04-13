@@ -3,8 +3,8 @@ package by.academy.shop;
 public class Milk extends Product {
     protected String vegetarian;
 
-    protected Milk (double price, int quantity, String name, String vegetarian) {
-        super(price,quantity,name,"молочные продукты");
+    protected Milk(double price, int quantity, String name, String type, String vegetarian) {
+        super(price, quantity, name, type);
         this.vegetarian = vegetarian;
     }
 
