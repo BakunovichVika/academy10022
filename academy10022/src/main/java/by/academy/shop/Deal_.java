@@ -1,5 +1,7 @@
 package by.academy.shop;
 
+import by.academy.lesson12.Producer;
+
 import java.time.LocalDate;
 import java.util.Arrays;
 

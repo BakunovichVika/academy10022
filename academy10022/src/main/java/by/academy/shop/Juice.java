@@ -1,5 +1,8 @@
 package by.academy.shop;
 
+import by.academy.lesson12.Producer;
+
+@Producer(startYear = 2022, country = "Грузия", founderFullName = "Шестепёров Сергей Мигельевич")
 public class Juice extends Product {
     protected String taste;
 

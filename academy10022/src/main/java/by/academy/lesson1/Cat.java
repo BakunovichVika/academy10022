@@ -1,6 +1,8 @@
 package by.academy.lesson1;
 
-public class Cat {
+import java.io.Serializable;
+
+public class Cat implements Serializable {
 	int age;
 	String nickname;
 
@@ -54,6 +56,9 @@ public class Cat {
 	
 	public void walk () {
 		System.out.println("Кот гуляет");
-		
+	}
+
+	public static void main (String [] args) {
+		Cat cat1 = new Cat (15);
 	}
 }

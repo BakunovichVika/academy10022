@@ -1,5 +1,8 @@
 package by.academy.shop;
 
+import by.academy.lesson12.Producer;
+
+@Producer(startYear = 2022, founderFullName = "Деревянко Галина Николаевна")
 public class Yogurt extends Product {
     protected String flavor;
 

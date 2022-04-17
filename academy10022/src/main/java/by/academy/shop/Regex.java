@@ -10,7 +10,7 @@ public class Regex {
         public static Pattern patterndate = Pattern.compile("^\\d{1,2}[\\/\\-]\\d{1,2}[\\/\\-]\\d{4}$");
         public static Pattern patternAmerican = Pattern.compile("^\\+\1\\d+$");
         public static Pattern patternBelarus = Pattern.compile("^\\+\375\\d+$");
-        public static Pattern patternEmail = Pattern.compile("^[_A-Za-z0-9-\\\\+]+(\\\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\\\.[A-Za-z0-9]+)*(\\\\.[A-Za-z]{2,})$");
+        public static Pattern patternEmail = Pattern.compile("^([a-z0-9]+\\.)*[a-z0-9]+@[a-z0-9]+(\\.[a-z0-9]+)*\\.[a-z]{2,6}$");
 
 
 

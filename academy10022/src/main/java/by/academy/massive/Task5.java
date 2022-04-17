@@ -77,11 +77,11 @@ public class Task5 {
 
 
         if(a1<a2) {
-            System.out.println("Srednee arifmeticheskoje pervogo massiva menjshe srednego arifmethicheskogo vtorogo massiva");
+            System.out.println("Среднее арифметическое первого массива меньше среднего арифметического второго массива");
         } else if(a2<a1) {
-            System.out.println("Srednee arifmeticheskoje vtorogo massiva menjshe srednego arifmethicheskogo pervogo massiva");
+            System.out.println("Среднее арифметическое второго массива меньше среднего арифметического первого массива");
         } else {
-            System.out.println("Srednije arifmethicheskije ravni drug drugu");
+            System.out.println("Средние арифметические равны друг другу");
         }
     }
 }

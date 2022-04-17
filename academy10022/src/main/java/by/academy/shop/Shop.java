@@ -4,12 +4,12 @@ import java.time.LocalDate;
 
 public class Shop {
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         User buyer = new User(20, "Вика", 1000);
         User seller = new User(19, "Яна", 1000);
         Product[] basket = new Product[3];
         Milk milk = new Milk(15.5, 3, "Савушкин", "Молоко", "Вегетерианское");
-        Yogurt yogurt = new Yogurt(20, 2, "Матроскин", "Молочный продукт",  "Клубничный");
+        Yogurt yogurt = new Yogurt(20, 2, "Матроскин", "Молочный продукт", "Клубничный");
         Juice juice = new Juice(15, 1, "Rich", "Сок", "Яблочный");
 
         basket[0] = milk;
@@ -27,10 +27,22 @@ public class Shop {
 
         deal_.removeProduct(1);
         System.out.println(deal_);
-        
+
 //        Milk milk1 = new Milk(15.5, 6, "Cow", "vegetarian");
 //        milk1.veget();
 //        juice.dateIs();
 
+        Validator emailValid = new Validator() {
+
+            @Override
+            public boolean validate(String valid) {
+                if (Regex.checkEmail(valid) == true) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+        };
     }
 }
