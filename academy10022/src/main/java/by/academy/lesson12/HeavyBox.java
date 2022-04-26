@@ -3,7 +3,7 @@ package by.academy.lesson12;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-class HeavyBox {
+ class HeavyBox {
 
     int weight;
     int width;
