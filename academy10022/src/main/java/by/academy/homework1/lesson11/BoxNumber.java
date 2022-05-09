@@ -1,4 +1,4 @@
-package by.academy.lesson11;
+package by.academy.homework1.lesson11;
 
 public class BoxNumber <T extends Number> {
 

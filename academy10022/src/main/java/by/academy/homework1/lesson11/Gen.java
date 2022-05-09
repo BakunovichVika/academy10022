@@ -1,8 +1,7 @@
-package by.academy.lesson11;
+package by.academy.homework1.lesson11;
 
 import by.academy.lesson1.Cat;
 
-import java.awt.print.Book;
 import java.io.Serializable;
 
 public class Gen <T extends Comparable,V extends Cat & Serializable, K extends Number> {
