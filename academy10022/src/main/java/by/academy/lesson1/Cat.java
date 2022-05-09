@@ -3,8 +3,12 @@ package by.academy.lesson1;
 import java.io.Serializable;
 
 public class Cat implements Serializable {
-	int age;
-	String nickname;
+
+	private static final long serialVersionUID = 1L;
+
+	public transient int age;
+	private String nickname;
+	protected String peculiarities;
 
 	public Cat() {
 		super();
@@ -14,11 +18,25 @@ public class Cat implements Serializable {
 		super();
 		this.age = age;
 	}
+	public Cat(int age, String nickname, String peculiarities) {
+		super();
+		this.age = age;
+		this.nickname=nickname;
+		this.peculiarities=peculiarities;
+	}
 
 	public Cat(int age, String nickname) {
 		super();
 		this.age = age;
 		this.nickname = nickname;
+	}
+
+	@Override
+	public String toString() {
+		return "Cat{" +
+				"age=" + age +
+				", nickname='" + nickname + '\'' +
+				'}';
 	}
 
 	public void sleep() {

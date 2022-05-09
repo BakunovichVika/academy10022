@@ -7,4 +7,23 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
     </properties>
+
+    <!-- https://mvnrepository.com/artifact/junit/junit -->
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13</version>
+            <scope>test</scope>
+        </dependency>
+
+
+    <!-- https://mvnrepository.com/artifact/com.google.gwt/gwt-user -->
+    <dependency>
+        <groupId>com.google.gwt</groupId>
+        <artifactId>gwt-dev</artifactId>
+        <version>2.9.0</version>
+        <scope>provided</scope>
+    </dependency>
+    </dependencies>
 </project>

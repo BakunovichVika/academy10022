@@ -12,6 +12,10 @@ public class Juice extends Product {
 
     }
 
+    public Juice() {
+        super();
+    }
+
     @Override
     protected double getDiscount() {
         if (price > 15) {

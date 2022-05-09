@@ -15,20 +15,17 @@ public class CatTextDemo2 {
                 InputStream input = new FileInputStream("cat.txt")) {
             byte[] buf = new byte[1024];
             int bytesRead;
-            while ((bytesRead=input.read(buf))>0){
-                output.write(buf,0,bytesRead);
+            while ((bytesRead=input.read(buf))!=-1){
+                output.write(buf,0, bytesRead);
             }
 
-
-
-
-//            String str = "Васька";
-//            for (int i=0;i<str.length();i++){
-//                input.(
-//            }
         } catch (IOException e) {
             e.printStackTrace();
         }
+        //            String str = "Васька";
+//            for (int i=0;i<str.length();i++){
+//                input.(
+//            }
 
     }
 }
